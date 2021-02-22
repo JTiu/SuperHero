@@ -24,7 +24,7 @@ namespace SuperHeroesNew.Controllers
         public ActionResult Index()
         {
             List<SuperHero> theSups = _context.SuperHeroes.ToList();
-            var person = _context.SuperHeroes.Where(s => s.Name == "Batman").Single();//not really here, but a search method
+            //var person = _context.SuperHeroes.Where(s => s.Name == "Batman").Single();//not really here, but a search method
             return View(theSups);
         }
 
@@ -33,8 +33,8 @@ namespace SuperHeroesNew.Controllers
         {
 
             List<SuperHero> theSups = _context.SuperHeroes.ToList();
-            var person = _context.SuperHeroes.Where(s => s.Name == "Batman").Single();//not really here, but a search method
-            return View(theSups);
+            var person = _context.SuperHeroes.Where(s => s.Id == id).Single();//not really here, but a search method
+            return View(person);
         }
 
         // GET: SuperHeroesController/Create
@@ -63,7 +63,9 @@ namespace SuperHeroesNew.Controllers
         // GET: SuperHeroesController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+           // List<SuperHero> theSups = _context.SuperHeroes.ToList();
+            var person = _context.SuperHeroes.Where(s => s.Id == id).Single();//not really here, but a search method
+            return View(person);
         }
 
         // POST: SuperHeroesController/Edit/5
@@ -73,6 +75,16 @@ namespace SuperHeroesNew.Controllers
         {
             try
             {
+                SuperHero superHero = new SuperHero();
+                superHero.Name = collection["Name"];
+                superHero.PrimaryAbility = collection["PrimaryAbility"];
+                superHero.SecondaryAbility = collection["SecondaryAbility"];
+                superHero.AlterEgo = collection["AlterEgo"];
+                superHero.CatchPhrase = collection["CatchPhrase"];
+                superHero.Id = id;
+
+                _context.SuperHeroes.Update(superHero);
+                _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -84,7 +96,8 @@ namespace SuperHeroesNew.Controllers
         // GET: SuperHeroesController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var person = _context.SuperHeroes.Where(s => s.Id == id).Single();
+            return View(person);
         }
 
         // POST: SuperHeroesController/Delete/5
@@ -94,6 +107,16 @@ namespace SuperHeroesNew.Controllers
         {
             try
             {
+               
+                SuperHero superHero = new SuperHero();
+                superHero.Name = collection["Name"];
+                superHero.PrimaryAbility = collection["PrimaryAbility"];
+                superHero.SecondaryAbility = collection["SecondaryAbility"];
+                superHero.AlterEgo = collection["AlterEgo"];
+                superHero.CatchPhrase = collection["CatchPhrase"];
+                superHero.Id = id;
+                _context.SuperHeroes.Remove(superHero);
+                _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             catch

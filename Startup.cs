@@ -62,7 +62,9 @@ namespace SuperHeroesNew
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    /*Changed line 66 to have the default landing page to SuperHeroes Index page*/
+                    /*Original: pattern: "{controller=Home}/{action=Index}/{id?}");*/
+                    pattern: "{controller=SuperHeroes}/{action=Index}");
                 endpoints.MapRazorPages();
             });
         }
