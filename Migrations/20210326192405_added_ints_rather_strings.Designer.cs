@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SuperHeroesNew.Data;
 
-namespace SuperHeroesNew.Data.Migrations
+namespace SuperHeroesNew.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210326062251_BoxThemis_Round_1")]
-    partial class BoxThemis_Round_1
+    [Migration("20210326192405_added_ints_rather_strings")]
+    partial class added_ints_rather_strings
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -228,23 +228,80 @@ namespace SuperHeroesNew.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("AlterEgo")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_10_B1")
+                        .HasColumnType("int");
 
-                    b.Property<string>("CatchPhrase")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_10_B2")
+                        .HasColumnType("int");
 
-                    b.Property<string>("DisguiseOutfit")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_11_B1")
+                        .HasColumnType("int");
 
-                    b.Property<string>("PrimaryAbility")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_11_B2")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_1_B1")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_12_B1")
+                        .HasColumnType("int");
 
-                    b.Property<string>("SecondaryAbility")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_12_B2")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_1_B1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_1_B2")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_2_B1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_2_B2")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_3_B1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_3_B2")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_4_B1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_4_B2")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_5_B1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_5_B2")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_6_B1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_6_B2")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_7_B1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_7_B2")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_8_B1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_8_B2")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_9_B1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Round_9_B2")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Total")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

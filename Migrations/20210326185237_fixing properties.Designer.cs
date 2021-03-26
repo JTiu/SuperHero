@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SuperHeroesNew.Data;
 
-namespace SuperHeroesNew.Data.Migrations
+namespace SuperHeroesNew.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210326185237_fixing properties")]
+    partial class fixingproperties
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -226,8 +228,8 @@ namespace SuperHeroesNew.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Round_10_B1")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_10_B1")
+                        .HasColumnType("int");
 
                     b.Property<string>("Round_10_B2")
                         .HasColumnType("nvarchar(max)");
@@ -244,59 +246,59 @@ namespace SuperHeroesNew.Data.Migrations
                     b.Property<string>("Round_12_B2")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Round_1_B1")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_1_B1")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_1_B2")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_1_B2")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_2_B1")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_2_B1")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_2_B2")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_2_B2")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_3_B1")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_3_B1")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_3_B2")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_3_B2")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_4_B1")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_4_B1")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_4_B2")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_4_B2")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_5_B1")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_5_B1")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_5_B2")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_5_B2")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_6_B1")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_6_B1")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_6_B2")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_6_B2")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_7_B1")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_7_B1")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_7_B2")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_7_B2")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_8_B1")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_8_B1")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_8_B2")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_8_B2")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_9_B1")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_9_B1")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Round_9_B2")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Round_9_B2")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

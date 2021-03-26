@@ -50,6 +50,18 @@ namespace SuperHeroesNew.Controllers
         {
             try
             {
+                int total = 0;
+                total += newSup.Round_10_B1;
+
+
+
+
+
+
+
+
+
+                newSup.Total = total;
                 _context.SuperHeroes.Add(newSup);
                 _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
@@ -75,35 +87,35 @@ namespace SuperHeroesNew.Controllers
         {
             try
             {
-                SuperHero superHero = new SuperHero();
-                superHero.Round_1_B1 = collection["Round_1_B1"];
-                superHero.Round_1_B2 = collection["Round_1_B2"];
-                superHero.Round_2_B1 = collection["Round_2_B1"];
-                superHero.Round_2_B2 = collection["Round_2_B2"];
-                superHero.Round_3_B1 = collection["Round_3_B1"];
-                superHero.Round_3_B2 = collection["Round_3_B2"];
-                superHero.Round_3_B1 = collection["Round_4_B1"];
-                superHero.Round_3_B2 = collection["Round_4_B2"];
-                superHero.Round_1_B1 = collection["Round_5_B1"];
-                superHero.Round_1_B2 = collection["Round_5_B2"];
-                superHero.Round_2_B1 = collection["Round_6_B2"];
-                superHero.Round_2_B2 = collection["Round_6_B2"];
-                superHero.Round_3_B1 = collection["Round_7_B2"];
-                superHero.Round_3_B2 = collection["Round_7_B2"];
-                superHero.Round_3_B1 = collection["Round_8_B1"];
-                superHero.Round_3_B2 = collection["Round_8_B2"];
-                superHero.Round_1_B1 = collection["Round_9_B1"];
-                superHero.Round_1_B2 = collection["Round_9_B2"];
-                superHero.Round_2_B1 = collection["Round_10_B2"];
-                superHero.Round_2_B2 = collection["Round_10_B2"];
-                superHero.Round_3_B1 = collection["Round_11_B2"];
-                superHero.Round_3_B2 = collection["Round_11_B2"];
-                superHero.Round_3_B1 = collection["Round_12_B1"];
-                superHero.Round_3_B2 = collection["Round_12_B2"];
+                //SuperHero superHero = new SuperHero();
+                //superHero.Round_1_B1 = collection["Round_1_B1"];
+                //superHero.Round_1_B2 = collection["Round_1_B2"];
+                //superHero.Round_2_B1 = collection["Round_2_B1"];
+                //superHero.Round_2_B2 = collection["Round_2_B2"];
+                //superHero.Round_3_B1 = collection["Round_3_B1"];
+                //superHero.Round_3_B2 = collection["Round_3_B2"];
+                //superHero.Round_3_B1 = collection["Round_4_B1"];
+                //superHero.Round_3_B2 = collection["Round_4_B2"];
+                //superHero.Round_1_B1 = collection["Round_5_B1"];
+                //superHero.Round_1_B2 = collection["Round_5_B2"];
+                //superHero.Round_2_B1 = collection["Round_6_B2"];
+                //superHero.Round_2_B2 = collection["Round_6_B2"];
+                //superHero.Round_3_B1 = collection["Round_7_B2"];
+                //superHero.Round_3_B2 = collection["Round_7_B2"];
+                //superHero.Round_3_B1 = collection["Round_8_B1"];
+                //superHero.Round_3_B2 = collection["Round_8_B2"];
+                //superHero.Round_1_B1 = collection["Round_9_B1"];
+                //superHero.Round_1_B2 = collection["Round_9_B2"];
+                //superHero.Round_2_B1 = collection["Round_10_B2"];
+                //superHero.Round_2_B2 = collection["Round_10_B2"];
+                //superHero.Round_3_B1 = collection["Round_11_B2"];
+                //superHero.Round_3_B2 = collection["Round_11_B2"];
+                //superHero.Round_3_B1 = collection["Round_12_B1"];
+                //superHero.Round_3_B2 = collection["Round_12_B2"];
 
-                superHero.Id = id;
+                //superHero.Id = id;
 
-                _context.SuperHeroes.Update(superHero);
+                //_context.SuperHeroes.Update(superHero);
                 _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
@@ -129,30 +141,30 @@ namespace SuperHeroesNew.Controllers
             {
                
                 SuperHero superHero = new SuperHero();
-                superHero.Round_1_B1 = collection["Round_1_B1"];
-                superHero.Round_1_B2 = collection["Round_1_B2"];
-                superHero.Round_2_B1 = collection["Round_2_B1"];
-                superHero.Round_2_B2 = collection["Round_2_B2"];
-                superHero.Round_2_B2 = collection["Round_3_B1"];
-                superHero.Round_2_B2 = collection["Round_3_B2"];
-                superHero.Round_1_B1 = collection["Round_4_B1"];
-                superHero.Round_1_B2 = collection["Round_4_B2"];
-                superHero.Round_2_B1 = collection["Round_5_B1"];
-                superHero.Round_2_B2 = collection["Round_5_B2"];
-                superHero.Round_2_B2 = collection["Round_6_B1"];
-                superHero.Round_2_B2 = collection["Round_6_B2"];
-                superHero.Round_1_B1 = collection["Round_7_B1"];
-                superHero.Round_1_B2 = collection["Round_7_B2"];
-                superHero.Round_2_B1 = collection["Round_8_B1"];
-                superHero.Round_2_B2 = collection["Round_8_B2"];
-                superHero.Round_2_B2 = collection["Round_9_B1"];
-                superHero.Round_2_B2 = collection["Round_9_B2"];
-                superHero.Round_1_B1 = collection["Round_10_B1"];
-                superHero.Round_1_B2 = collection["Round_10_B2"];
-                superHero.Round_2_B1 = collection["Round_11_B1"];
-                superHero.Round_2_B2 = collection["Round_11_B2"];
-                superHero.Round_2_B2 = collection["Round_12_B1"];
-                superHero.Round_2_B2 = collection["Round_12_B2"];
+                //superHero.Round_1_B1 = collection["Round_1_B1"];
+                //superHero.Round_1_B2 = collection["Round_1_B2"];
+                //superHero.Round_2_B1 = collection["Round_2_B1"];
+                //superHero.Round_2_B2 = collection["Round_2_B2"];
+                //superHero.Round_2_B2 = collection["Round_3_B1"];
+                //superHero.Round_2_B2 = collection["Round_3_B2"];
+                //superHero.Round_1_B1 = collection["Round_4_B1"];
+                //superHero.Round_1_B2 = collection["Round_4_B2"];
+                //superHero.Round_2_B1 = collection["Round_5_B1"];
+                //superHero.Round_2_B2 = collection["Round_5_B2"];
+                //superHero.Round_2_B2 = collection["Round_6_B1"];
+                //superHero.Round_2_B2 = collection["Round_6_B2"];
+                //superHero.Round_1_B1 = collection["Round_7_B1"];
+                //superHero.Round_1_B2 = collection["Round_7_B2"];
+                //superHero.Round_2_B1 = collection["Round_8_B1"];
+                //superHero.Round_2_B2 = collection["Round_8_B2"];
+                //superHero.Round_2_B2 = collection["Round_9_B1"];
+                //superHero.Round_2_B2 = collection["Round_9_B2"];
+                //superHero.Round_1_B1 = collection["Round_10_B1"];
+                //superHero.Round_1_B2 = collection["Round_10_B2"];
+                //superHero.Round_2_B1 = collection["Round_11_B1"];
+                //superHero.Round_2_B2 = collection["Round_11_B2"];
+                //superHero.Round_2_B2 = collection["Round_12_B1"];
+                //superHero.Round_2_B2 = collection["Round_12_B2"];
 
 
 

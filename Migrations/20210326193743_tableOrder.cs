@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace SuperHeroesNew.Data.Migrations
+namespace SuperHeroesNew.Migrations
 {
-    public partial class _812 : Migration
+    public partial class tableOrder : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
