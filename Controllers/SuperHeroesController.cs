@@ -81,7 +81,9 @@ namespace SuperHeroesNew.Controllers
                 superHero.Round_2_B1 = collection["Round_1_B2"];
                 superHero.Round_2_B2 = collection["Round_2_B2"];
                 superHero.Round_3_B1 = collection["Round_3_B2"];
-                superHero.Round_3_B2 = collection["Round_1_B2"];
+                superHero.Round_3_B2 = collection["Round_3_B2"];
+                superHero.Round_3_B1 = collection["Round_4_B1"];
+                superHero.Round_3_B2 = collection["Round_4_B2"];
                 superHero.Id = id;
 
                 _context.SuperHeroes.Update(superHero);
