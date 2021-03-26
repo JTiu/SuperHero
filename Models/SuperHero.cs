@@ -16,6 +16,6 @@ namespace SuperHeroesNew.Models
         public string SecondaryAbility { get; set; }
         public string CatchPhrase { get; set; }
 
-       // public string Disguise_Outfit { get; set; }
+       public string DisguiseOutfit { get; set; }//comment this out
     }
 }

@@ -81,6 +81,7 @@ namespace SuperHeroesNew.Controllers
                 superHero.SecondaryAbility = collection["SecondaryAbility"];
                 superHero.AlterEgo = collection["AlterEgo"];
                 superHero.CatchPhrase = collection["CatchPhrase"];
+                superHero.DisguiseOutfit = collection["DisguiseOutfit"];
                 superHero.Id = id;
 
                 _context.SuperHeroes.Update(superHero);
