@@ -76,12 +76,12 @@ namespace SuperHeroesNew.Controllers
             try
             {
                 SuperHero superHero = new SuperHero();
-                superHero.Name = collection["Name"];
-                superHero.PrimaryAbility = collection["PrimaryAbility"];
-                superHero.SecondaryAbility = collection["SecondaryAbility"];
-                superHero.AlterEgo = collection["AlterEgo"];
-                superHero.CatchPhrase = collection["CatchPhrase"];
-                superHero.DisguiseOutfit = collection["DisguiseOutfit"];
+                superHero.Round_1_B1 = collection["Round_1_B1"];
+                superHero.Round_1_B2 = collection["Round_1_B2"];
+                superHero.Round_2_B1 = collection["Round_1_B2"];
+                superHero.Round_2_B2 = collection["Round_2_B2"];
+                superHero.Round_3_B1 = collection["Round_3_B2"];
+                superHero.Round_3_B2 = collection["Round_1_B2"];
                 superHero.Id = id;
 
                 _context.SuperHeroes.Update(superHero);
@@ -110,11 +110,11 @@ namespace SuperHeroesNew.Controllers
             {
                
                 SuperHero superHero = new SuperHero();
-                superHero.Name = collection["Name"];
-                superHero.PrimaryAbility = collection["PrimaryAbility"];
-                superHero.SecondaryAbility = collection["SecondaryAbility"];
-                superHero.AlterEgo = collection["AlterEgo"];
-                superHero.CatchPhrase = collection["CatchPhrase"];
+                superHero.Round_1_B1 = collection["Round_1_B1"];
+                superHero.Round_1_B2 = collection["Round_1_B2"];
+                superHero.Round_2_B1 = collection["Round_2_B1"];
+                superHero.Round_2_B2 = collection["Round_2_B2"];
+                superHero.Round_2_B2 = collection["Round_3_B1"];
                 superHero.Id = id;
                 _context.SuperHeroes.Remove(superHero);
                 _context.SaveChanges();

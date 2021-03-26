@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SuperHeroesNew.Data;
 
 namespace SuperHeroesNew.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210326064641_r2b1")]
+    partial class r2b1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -226,6 +228,12 @@ namespace SuperHeroesNew.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("CatchPhrase")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DisguiseOutfit")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Round_1_B1")
                         .HasColumnType("nvarchar(max)");
 
@@ -235,13 +243,7 @@ namespace SuperHeroesNew.Data.Migrations
                     b.Property<string>("Round_2_B1")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Round_2_B2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Round_3_B1")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Round_3_B2")
+                    b.Property<string>("SecondaryAbility")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
