@@ -1,6 +1,6 @@
 using System;
 
-namespace Scorecard.Models
+namespace SuperHeroesNew.Models
 {
     public class ErrorViewModel
     {

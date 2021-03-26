@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Scorecard.Data;
-using Scorecard.Models;
+using SuperHeroesNew.Data;
+using SuperHeroesNew.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Scorecard.Controllers
+namespace SuperHeroesNew.Controllers
     //Reloaded Visual Studio, all errors now not appearing
 {//List<SuperHero> theSups = _context.SuperHeroes.ToList();
     //var person = _context.SuperHeroes.Where(s => s.Name == "Batman").Single();//not really here, but a search method

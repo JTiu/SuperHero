@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Scorecard.Data;
+using SuperHeroesNew.Data;
 
-namespace Scorecard.Data.Migrations
+namespace SuperHeroesNew.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20210326050731_Added_DisguiseOutfit")]
@@ -221,7 +221,7 @@ namespace Scorecard.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("Scorecard.Models.SuperHero", b =>
+            modelBuilder.Entity("SuperHeroesNew.Models.SuperHero", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

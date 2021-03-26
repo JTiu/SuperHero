@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Scorecard.Models;
+using SuperHeroesNew.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Scorecard.Data
+namespace SuperHeroesNew.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

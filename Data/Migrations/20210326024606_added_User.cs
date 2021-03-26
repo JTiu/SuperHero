@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Scorecard.Data.Migrations
+namespace SuperHeroesNew.Data.Migrations
 {
     public partial class added_User : Migration
     {
