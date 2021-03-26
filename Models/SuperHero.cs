@@ -15,8 +15,24 @@ namespace SuperHeroesNew.Models
         public string Round_2_B1 { get; set; }
         public string Round_2_B2 { get; set; }
         public string Round_3_B1 { get; set; }
-        public string Round_3_B2 { get; set; }//comment this out
+        public string Round_3_B2 { get; set; }
         public string Round_4_B1 { get; set; }
         public string Round_4_B2 { get; set; }
+        public string Round_5_B1 { get; set; }
+        public string Round_5_B2 { get; set; }
+        public string Round_6_B1 { get; set; }
+        public string Round_6_B2 { get; set; }
+        public string Round_7_B1 { get; set; }
+        public string Round_7_B2 { get; set; }
+        public string Round_8_B1 { get; set; }
+        public string Round_8_B2 { get; set; }
+        public string Round_9_B1 { get; set; }
+        public string Round_9_B2 { get; set; }
+        public string Round_10_B1 { get; set; }
+        public string Round_10_B2 { get; set; }
+        public string Round_11_B1 { get; set; }
+        public string Round_11_B2 { get; set; }
+        public string Round_12_B1 { get; set; }
+        public string Round_12_B2 { get; set; }
     }
 }
