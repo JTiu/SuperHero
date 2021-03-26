@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
-namespace SuperHeroesNew.Data.Migrations
+namespace Scorecard.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

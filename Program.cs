@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SuperHeroesNew
+namespace Scorecard
 {
     public class Program
     {

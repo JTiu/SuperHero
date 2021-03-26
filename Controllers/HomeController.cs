@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using SuperHeroesNew.Models;
+using Scorecard.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SuperHeroesNew.Controllers
+namespace Scorecard.Controllers
 {
     public class HomeController : Controller
     {
