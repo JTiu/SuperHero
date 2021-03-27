@@ -34,6 +34,8 @@ namespace SuperHeroesNew.Models
         public int Round_11_B2 { get; set; }
         public int Round_12_B1 { get; set; }
         public int Round_12_B2 { get; set; }
-        public int Total { get; set; }
+        public int Total_B1 { get; set; }
+        public int Total_B2 { get; set; }
+
     }
 }

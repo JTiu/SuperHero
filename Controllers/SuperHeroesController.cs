@@ -78,7 +78,8 @@ namespace SuperHeroesNew.Controllers
                 total_B2+= newSup.Round_12_B2;
 
                 
-                newSup.Total = total_B1;
+                newSup.Total_B1 = total_B1;
+                newSup.Total_B2 = total_B2;
                 
                 _context.SuperHeroes.Add(newSup);
                 _context.SaveChanges();
