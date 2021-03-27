@@ -50,18 +50,36 @@ namespace SuperHeroesNew.Controllers
         {
             try
             {
-                int total = 0;
-                total += newSup.Round_10_B1;
+                int total_B1 = 0;
+                int total_B2 = 0;
 
+                total_B1 += newSup.Round_1_B1;//here to work  Round_1_B2
+                total_B2 += newSup.Round_1_B2;//here to work
+                total_B1 += newSup.Round_2_B1;
+                total_B2 += newSup.Round_2_B2;
+                total_B1+= newSup.Round_3_B1;
+                total_B2 += newSup.Round_3_B2;
+                total_B1 += newSup.Round_4_B1;
+                total_B2 += newSup.Round_4_B2;
+                total_B1 += newSup.Round_5_B1;
+                total_B2 += newSup.Round_5_B2;
+                total_B1 += newSup.Round_6_B1;
+                total_B2 += newSup.Round_6_B2;
+                total_B1 += newSup.Round_7_B1;
+                total_B2 += newSup.Round_7_B2;
+                total_B1 += newSup.Round_8_B2;
+                total_B2 += newSup.Round_8_B2;
+                total_B1 += newSup.Round_9_B1;
+                total_B2 += newSup.Round_9_B2;
+                total_B1 += newSup.Round_10_B1;
+                total_B2 += newSup.Round_10_B1;
+                total_B1 += newSup.Round_11_B1;
+                total_B2 += newSup.Round_11_B2;
+                total_B2+= newSup.Round_12_B2;
 
-
-
-
-
-
-
-
-                newSup.Total = total;
+                
+                newSup.Total = total_B1;
+                
                 _context.SuperHeroes.Add(newSup);
                 _context.SaveChanges();
                 return RedirectToAction(nameof(Index));

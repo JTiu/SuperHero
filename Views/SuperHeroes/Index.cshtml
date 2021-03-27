@@ -7,7 +7,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Begin A Training Scorecard</a>
 </p>
 <table class="table">
     <thead>
@@ -29,13 +29,13 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Round_3_B2)
-            <th>
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Round_4_B1)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Round_4_B2)
-            <th>
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Round_5_B1)
             </th>
@@ -53,13 +53,13 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Round_7_B2)
-            <th>
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Round_8_B1)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Round_8_B2)
-            <th>
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Round_9_B1)
             </th>
@@ -77,13 +77,16 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Round_11_B2)
-            <th>
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Round_12_B1)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Round_12_B2)
+            </th>
             <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
 
 
 
@@ -109,9 +112,72 @@
                 @Html.DisplayFor(modelItem => item.Round_3_B1)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                @Html.DisplayFor(modelItem => item.Round_3_B2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_4_B1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_4_B2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_5_B1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_5_B2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_6_B1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_6_B2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_7_B1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_7_B2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_8_B1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_8_B2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_9_B1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_9_B2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_10_B1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_10_B2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_11_B1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_11_B2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_12_B1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round_12_B2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+
+
+
+            <td>
+                <!--<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>-->
             </td>
         </tr>
 }
