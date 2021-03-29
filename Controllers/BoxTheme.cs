@@ -13,17 +13,17 @@ namespace SuperHeroesNew.Controllers
     //var person = _context.SuperHeroes.Where(s => s.Name == "Batman").Single();//not really here, but a search method
       //      return View(theSups);
     
-    public class SuperHeroesController : Controller
+    public class BoxTheme : Controller
     {
         private ApplicationDbContext _context;
-        public SuperHeroesController(ApplicationDbContext context)
+        public BoxTheme(ApplicationDbContext context)
         {
             _context = context;
         }
         // GET: SuperHeroesController
         public ActionResult Index()
         {
-            List<SuperHero> theSups = _context.SuperHeroes.ToList();
+            List<ScoreCard> theSups = _context.SuperHeroes.ToList();
             //var person = _context.SuperHeroes.Where(s => s.Name == "Batman").Single();//not really here, but a search method
             return View(theSups);
         }
@@ -32,7 +32,7 @@ namespace SuperHeroesNew.Controllers
         public ActionResult Details(int id)
         {
 
-            List<SuperHero> theSups = _context.SuperHeroes.ToList();
+            List<ScoreCard> theSups = _context.SuperHeroes.ToList();
             var person = _context.SuperHeroes.Where(s => s.Id == id).Single();//not really here, but a search method
             return View(person);
         }
@@ -46,7 +46,7 @@ namespace SuperHeroesNew.Controllers
         // POST: SuperHeroesController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(SuperHero newSup)
+        public ActionResult Create(ScoreCard newSup)
         {
             try
             {
@@ -159,7 +159,7 @@ namespace SuperHeroesNew.Controllers
             try
             {
                
-                SuperHero superHero = new SuperHero();
+                ScoreCard superHero = new ScoreCard();
                 //superHero.Round_1_B1 = collection["Round_1_B1"];
                 //superHero.Round_1_B2 = collection["Round_1_B2"];
                 //superHero.Round_2_B1 = collection["Round_2_B1"];
