@@ -10,12 +10,32 @@ namespace SuperHeroesNew.Models
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string AlterEgo { get; set; }
-        public string PrimaryAbility { get; set; }
-        public string SecondaryAbility { get; set; }
-        public string CatchPhrase { get; set; }
+        public int Round_1_B1 { get; set; }
+        public int Round_1_B2 { get; set; }
+        public int Round_2_B1 { get; set; }
+        public int Round_2_B2 { get; set; }
+        public int Round_3_B1 { get; set; }
+        public int Round_3_B2 { get; set; }
+        public int Round_4_B1 { get; set; }
+        public int Round_4_B2 { get; set; }
+        public int Round_5_B1 { get; set; }
+        public int Round_5_B2 { get; set; }
+        public int Round_6_B1 { get; set; }
+        public int Round_6_B2 { get; set; }
+        public int Round_7_B1 { get; set; }
+        public int Round_7_B2 { get; set; }
+        public int Round_8_B1 { get; set; }
+        public int Round_8_B2 { get; set; }
+        public int Round_9_B1 { get; set; }
+        public int Round_9_B2 { get; set; }
+        public int Round_10_B1 { get; set; }
+        public int Round_10_B2 { get; set; }
+        public int Round_11_B1 { get; set; }
+        public int Round_11_B2 { get; set; }
+        public int Round_12_B1 { get; set; }
+        public int Round_12_B2 { get; set; }
+        public int Total_B1 { get; set; }
+        public int Total_B2 { get; set; }
 
-       // public string Disguise_Outfit { get; set; }
     }
 }

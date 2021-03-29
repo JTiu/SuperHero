@@ -50,6 +50,37 @@ namespace SuperHeroesNew.Controllers
         {
             try
             {
+                int total_B1 = 0;
+                int total_B2 = 0;
+
+                total_B1 += newSup.Round_1_B1;//here to work  Round_1_B2
+                total_B2 += newSup.Round_1_B2;//here to work
+                total_B1 += newSup.Round_2_B1;
+                total_B2 += newSup.Round_2_B2;
+                total_B1+= newSup.Round_3_B1;
+                total_B2 += newSup.Round_3_B2;
+                total_B1 += newSup.Round_4_B1;
+                total_B2 += newSup.Round_4_B2;
+                total_B1 += newSup.Round_5_B1;
+                total_B2 += newSup.Round_5_B2;
+                total_B1 += newSup.Round_6_B1;
+                total_B2 += newSup.Round_6_B2;
+                total_B1 += newSup.Round_7_B1;
+                total_B2 += newSup.Round_7_B2;
+                total_B1 += newSup.Round_8_B2;
+                total_B2 += newSup.Round_8_B2;
+                total_B1 += newSup.Round_9_B1;
+                total_B2 += newSup.Round_9_B2;
+                total_B1 += newSup.Round_10_B1;
+                total_B2 += newSup.Round_10_B1;
+                total_B1 += newSup.Round_11_B1;
+                total_B2 += newSup.Round_11_B2;
+                total_B2+= newSup.Round_12_B2;
+
+                
+                newSup.Total_B1 = total_B1;
+                newSup.Total_B2 = total_B2;
+                
                 _context.SuperHeroes.Add(newSup);
                 _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
@@ -75,15 +106,35 @@ namespace SuperHeroesNew.Controllers
         {
             try
             {
-                SuperHero superHero = new SuperHero();
-                superHero.Name = collection["Name"];
-                superHero.PrimaryAbility = collection["PrimaryAbility"];
-                superHero.SecondaryAbility = collection["SecondaryAbility"];
-                superHero.AlterEgo = collection["AlterEgo"];
-                superHero.CatchPhrase = collection["CatchPhrase"];
-                superHero.Id = id;
+                //SuperHero superHero = new SuperHero();
+                //superHero.Round_1_B1 = collection["Round_1_B1"];
+                //superHero.Round_1_B2 = collection["Round_1_B2"];
+                //superHero.Round_2_B1 = collection["Round_2_B1"];
+                //superHero.Round_2_B2 = collection["Round_2_B2"];
+                //superHero.Round_3_B1 = collection["Round_3_B1"];
+                //superHero.Round_3_B2 = collection["Round_3_B2"];
+                //superHero.Round_3_B1 = collection["Round_4_B1"];
+                //superHero.Round_3_B2 = collection["Round_4_B2"];
+                //superHero.Round_1_B1 = collection["Round_5_B1"];
+                //superHero.Round_1_B2 = collection["Round_5_B2"];
+                //superHero.Round_2_B1 = collection["Round_6_B2"];
+                //superHero.Round_2_B2 = collection["Round_6_B2"];
+                //superHero.Round_3_B1 = collection["Round_7_B2"];
+                //superHero.Round_3_B2 = collection["Round_7_B2"];
+                //superHero.Round_3_B1 = collection["Round_8_B1"];
+                //superHero.Round_3_B2 = collection["Round_8_B2"];
+                //superHero.Round_1_B1 = collection["Round_9_B1"];
+                //superHero.Round_1_B2 = collection["Round_9_B2"];
+                //superHero.Round_2_B1 = collection["Round_10_B2"];
+                //superHero.Round_2_B2 = collection["Round_10_B2"];
+                //superHero.Round_3_B1 = collection["Round_11_B2"];
+                //superHero.Round_3_B2 = collection["Round_11_B2"];
+                //superHero.Round_3_B1 = collection["Round_12_B1"];
+                //superHero.Round_3_B2 = collection["Round_12_B2"];
 
-                _context.SuperHeroes.Update(superHero);
+                //superHero.Id = id;
+
+                //_context.SuperHeroes.Update(superHero);
                 _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
@@ -109,11 +160,35 @@ namespace SuperHeroesNew.Controllers
             {
                
                 SuperHero superHero = new SuperHero();
-                superHero.Name = collection["Name"];
-                superHero.PrimaryAbility = collection["PrimaryAbility"];
-                superHero.SecondaryAbility = collection["SecondaryAbility"];
-                superHero.AlterEgo = collection["AlterEgo"];
-                superHero.CatchPhrase = collection["CatchPhrase"];
+                //superHero.Round_1_B1 = collection["Round_1_B1"];
+                //superHero.Round_1_B2 = collection["Round_1_B2"];
+                //superHero.Round_2_B1 = collection["Round_2_B1"];
+                //superHero.Round_2_B2 = collection["Round_2_B2"];
+                //superHero.Round_2_B2 = collection["Round_3_B1"];
+                //superHero.Round_2_B2 = collection["Round_3_B2"];
+                //superHero.Round_1_B1 = collection["Round_4_B1"];
+                //superHero.Round_1_B2 = collection["Round_4_B2"];
+                //superHero.Round_2_B1 = collection["Round_5_B1"];
+                //superHero.Round_2_B2 = collection["Round_5_B2"];
+                //superHero.Round_2_B2 = collection["Round_6_B1"];
+                //superHero.Round_2_B2 = collection["Round_6_B2"];
+                //superHero.Round_1_B1 = collection["Round_7_B1"];
+                //superHero.Round_1_B2 = collection["Round_7_B2"];
+                //superHero.Round_2_B1 = collection["Round_8_B1"];
+                //superHero.Round_2_B2 = collection["Round_8_B2"];
+                //superHero.Round_2_B2 = collection["Round_9_B1"];
+                //superHero.Round_2_B2 = collection["Round_9_B2"];
+                //superHero.Round_1_B1 = collection["Round_10_B1"];
+                //superHero.Round_1_B2 = collection["Round_10_B2"];
+                //superHero.Round_2_B1 = collection["Round_11_B1"];
+                //superHero.Round_2_B2 = collection["Round_11_B2"];
+                //superHero.Round_2_B2 = collection["Round_12_B1"];
+                //superHero.Round_2_B2 = collection["Round_12_B2"];
+
+
+
+
+
                 superHero.Id = id;
                 _context.SuperHeroes.Remove(superHero);
                 _context.SaveChanges();
