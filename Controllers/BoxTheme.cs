@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using BoxThemeF_Solution.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SuperHeroesNew.Data;
-using SuperHeroesNew.Models;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,7 +58,7 @@ namespace SuperHeroesNew.Controllers
                 total_B2 += newSup.Round_1_B2;//here to work
                 total_B1 += newSup.Round_2_B1;
                 total_B2 += newSup.Round_2_B2;
-                total_B1+= newSup.Round_3_B1;
+                total_B1 += newSup.Round_3_B1;
                 total_B2 += newSup.Round_3_B2;
                 total_B1 += newSup.Round_4_B1;
                 total_B2 += newSup.Round_4_B2;
@@ -75,7 +76,7 @@ namespace SuperHeroesNew.Controllers
                 total_B2 += newSup.Round_10_B1;
                 total_B1 += newSup.Round_11_B1;
                 total_B2 += newSup.Round_11_B2;
-                total_B2+= newSup.Round_12_B2;
+                total_B2 += newSup.Round_12_B2;
 
                 
                 newSup.Total_B1 = total_B1;

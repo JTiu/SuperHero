@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using BoxThemeF_Solution.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using SuperHeroesNew.Models;
+
 using System;
 using System.Collections.Generic;
 using System.Text;

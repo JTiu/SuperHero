@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SuperHeroesNew.Models
+namespace BoxThemeF_Solution.Models
 {
     public class ScoreCard
     {
